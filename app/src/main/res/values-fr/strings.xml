@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CryptoApp</string>
+    <string name="cancel">Annuler</string>
+    <string name="capture">Capturer</string>
+    <string name="chat">Chat</string>
+    <string name="chat_setup">Configuration de Chat</string>
+    <string name="check">Vérifier</string>
+    <string name="checking_existing_key">Vérification de la clé existante</string>
+    <string name="coming_soon">Arrive Bientôt</string>
+    <string name="create">Créer</string>
+    <string name="create_chat">Créer un Chat</string>
+    <string name="crypto_chat">CryptoChat</string>
+    <string name="decrypt">Décrypter</string>
+    <string name="decrypt_files">Décrypter les Fichiers</string>
+    <string name="delete_chat">Supprimer le Chat</string>
+    <string name="delete_chat_message_warning">Etes-vous sûr que vous voulez supprimer ce chat?</string>
+    <string name="delete_entry">Supprimer l\'entrée</string>
+    <string name="delete_file">Supprimer le fichier</string>
+    <string name="delete_file_question">Etes-vous sûr que vous voulez supprimer le fichier lié à cette entrée?</string>
+    <string name="done">Fini</string>
+    <string name="edit_chat">Modifier le Chat</string>
+    <string name="encrypt">Crypter</string>
+    <string name="encrypt_and_delete">Crypter et Supprimer</string>
+    <string name="encryption">Cryptage</string>
+    <string name="error">Une erreur est survenue</string>
+    <string name="from_database">Base de données</string>
+    <string name="from_file">Fichier</string>
+    <string name="generate_key">Générer une nouvelle clé</string>
+    <string name="generating_key">Génération d\'une nouvelle clé</string>
+    <string name="incorrect_file_hash">Le fichier sélectionné a la valeur Hash incorrect.</string>
+    <string name="iterations">Itérations</string>
+</resources>

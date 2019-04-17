@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/decrypt_file_list_item_root_cl">
+
+    <TextView
+        android:id="@+id/decrypt_file_list_item_file_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/decrypt_file_list_item_file_path_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/decrypt_file_list_item_file_name_tv"
+        android:layout_margin="10dp"
+        android:textColor="@color/teal"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/decrypt_file_list_item_file_exists_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/decrypt_file_list_item_file_path_tv"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_margin="5dp" />
+
+    <ImageView
+        android:id="@+id/decrypt_file_list_item_bytes_exist_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toStartOf="@id/decrypt_file_list_item_file_exists_iv"
+        app:layout_constraintTop_toBottomOf="@id/decrypt_file_list_item_file_path_tv"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_margin="5dp" />
+
+    <ImageView
+        android:id="@+id/decrypt_file_list_item_is_chat_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toStartOf="@id/decrypt_file_list_item_bytes_exist_iv"
+        app:layout_constraintTop_toBottomOf="@id/decrypt_file_list_item_file_path_tv"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_margin="5dp" />
+
+</android.support.constraint.ConstraintLayout>

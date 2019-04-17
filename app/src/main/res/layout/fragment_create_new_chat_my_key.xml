@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_create_new_chat_my_key_outer_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thekrayem.cryptoapp.chat.creation.CreateNewChatSetupFragment">
+
+    <ImageView
+        android:id="@+id/fragment_create_new_chat_my_key_qr_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+
+
+
+    <ProgressBar
+        android:id="@+id/fragment_create_new_chat_my_key_progress_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/teal"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/fragment_create_new_chat_my_key_progress_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/teal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fragment_create_new_chat_my_key_progress_pb"
+        android:layout_margin="15dp"
+        android:textColor="@color/teal"
+        android:text="@string/checking_existing_key"/>
+
+
+    <Button
+        android:id="@+id/fragment_create_new_chat_my_key_generate_bu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/teal"
+        android:shadowColor="@color/teal"
+        android:text="@string/generate_key"
+        android:layout_margin="15dp"/>
+
+
+</RelativeLayout>

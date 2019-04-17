@@ -1,0 +1,102 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:4752040997040857120",
+      "lastPropertyId": "12:7945147321937991505",
+      "name": "FileRecord",
+      "properties": [
+        {
+          "id": "1:3379306456213148812",
+          "name": "fileId"
+        },
+        {
+          "id": "2:7703462723988536051",
+          "name": "fileEncryptedBytes"
+        },
+        {
+          "id": "3:6117471372456186864",
+          "name": "hashedPass"
+        },
+        {
+          "id": "4:5984750179079758391",
+          "name": "salt"
+        },
+        {
+          "id": "5:7282350766631759886",
+          "name": "iv"
+        },
+        {
+          "id": "6:4079849852088231307",
+          "name": "fileOriginalName"
+        },
+        {
+          "id": "7:2503559893967723406",
+          "name": "fileEncryptedName"
+        },
+        {
+          "id": "8:414696201902183424",
+          "name": "filePath"
+        },
+        {
+          "id": "9:3819724000505385349",
+          "name": "iterations"
+        },
+        {
+          "id": "10:2728550248436661067",
+          "name": "keyLength"
+        },
+        {
+          "id": "11:7813469131540344356",
+          "name": "isChat"
+        },
+        {
+          "id": "12:7945147321937991505",
+          "name": "fileHash"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:7803143635329131374",
+      "lastPropertyId": "5:3922925887274139716",
+      "name": "ChatMessageRecord",
+      "properties": [
+        {
+          "id": "1:4351884712774746526",
+          "name": "messageId"
+        },
+        {
+          "id": "2:380861981257210657",
+          "name": "messageTime"
+        },
+        {
+          "id": "3:6892154899160451658",
+          "name": "messageContent"
+        },
+        {
+          "id": "4:8015175546563657055",
+          "name": "userId"
+        },
+        {
+          "id": "5:3922925887274139716",
+          "name": "mine"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:7803143635329131374",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

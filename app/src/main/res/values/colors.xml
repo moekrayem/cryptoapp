@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#953F00</color>
+
+
+    <color name="teal">#009688</color>
+    <color name="brown">#953F00</color>
+    <color name="darker_teal">#0C4E47</color>
+    <!--<color name="lighter_teal">#679D97</color>#-->
+    <color name="lighter_teal">#B2DFDB</color>
+    <color name="light_gray">#E0E0E0</color>
+    <color name="light_blue">#70BBF5</color>
+    <color name="dark_blue">#0362AB</color>
+
+
+
+</resources>

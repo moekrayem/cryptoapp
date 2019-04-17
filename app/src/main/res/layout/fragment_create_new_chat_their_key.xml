@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_create_new_chat_their_key_outer_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thekrayem.cryptoapp.chat.creation.CreateNewChatSetupFragment">
+
+    <TextureView
+        android:id="@+id/fragment_create_new_chat_their_key_camera_texv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/fragment_create_new_chat_their_key_animated_v"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/brown"/>
+
+    <Button
+        android:id="@+id/fragment_create_new_chat_their_key_capture_bu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/capture"/>
+
+</RelativeLayout>

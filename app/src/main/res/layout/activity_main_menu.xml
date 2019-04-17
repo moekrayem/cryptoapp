@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_menu_outer_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thekrayem.cryptoapp.main.MainMenuActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main_menu_inner_container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/activity_main_menu_chat_container_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/darker_teal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/activity_main_menu_chat_icon_iv"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_chat"/>
+
+            <TextView
+                android:id="@+id/activity_main_menu_chat_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chat"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_main_menu_encrypt_container_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/lighter_teal">
+
+            <ImageView
+                android:id="@+id/activity_main_menu_encryption_icon_iv"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_encryption"/>
+
+            <TextView
+                android:id="@+id/activity_main_menu_encryption_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/encryption"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

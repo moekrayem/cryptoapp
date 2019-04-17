@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">CryptoApp</string>
+    <string name="title_activity_encrypt_file">EncryptFileActivity</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="password_again">Password Again</string>
+    <string name="check_password">Check Password</string>
+    <string name="key_gen_method">Key Generation Method</string>
+    <string name="gen_from_lib" translatable="false">Generate from Crypto library</string>
+    <string name="shake">Shake for random key</string>
+    <string name="select_file_encrypt">Select file</string>
+    <string name="encrypt">Encrypt</string>
+    <string name="delete_file">Delete file</string>
+    <string name="check">Check</string>
+    <string name="error">An error has occurred</string>
+    <string name="success_file_not_deleted">Success. File not deleted.</string>
+    <string name="success">Success</string>
+    <string name="success_file_deleted">Success. File deleted.</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="select_key_gen_method">Select the key generation method</string>
+    <string name="no_file_selected">No file selected</string>
+    <string name="no_valid_name">Name not valid, it must be at least 3 characters long</string>
+    <string name="no_valid_pass">Password not valid</string>
+    <string name="password_incorrect">Password incorrect</string>
+    <string name="no_matching_pass">Passwords don\'t match</string>
+    <string name="decrypt">Decrypt</string>
+    <string name="select">Select</string>
+    <string name="cancel">Cancel</string>
+    <string name="iterations">Iterations</string>
+    <string name="key_length">Key Length</string>
+    <string name="iterations_not_set" translatable="false">Key iterations not set</string>
+    <string name="key_length_not_set">Key length not set</string>
+    <string name="delete_chat_message_warning">Are you sure you want to delete this chat?</string>
+    <string name="delete_chat">Delete Chat</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="create">Create</string>
+    <string name="create_chat">Create Chat</string>
+    <string name="start_new_chat">Start a New Chat!</string>
+    <string name="encrypt_and_delete">Encrypt and Delete</string>
+    <string name="crypto_chat">CryptoChat</string>
+    <string name="decrypt_files">Decrypt Files</string>
+    <string name="save_file_bytes">Save File Bytes</string>
+    <string name="select_decryption_source_content">The file you chose has two encrypted sources. One in the database and a file on the phone. Which one do you want to use?</string>
+    <string name="select_decryption_source_title">Select Decryption Source</string>
+    <string name="from_file">From File</string>
+    <string name="from_database">From Database</string>
+    <string name="delete_entry">Delete Entry</string>
+    <string name="link_to_file">Link to File</string>
+    <string name="delete_file_question">Do you want to delete the encrypted file linked to this entry?</string>
+    <string name="keep_file">Keep File</string>
+    <string name="you">You</string>
+    <string name="save">Save</string>
+    <string name="chat_setup">Chat Setup</string>
+    <string name="my_key">My Key</string>
+    <string name="their_key">Their Key</string>
+    <string name="name_saved">Name Saved</string>
+    <string name="generate_key">Generate New Key</string>
+    <string name="generating_key">Generating New Key</string>
+    <string name="no_existing_key">No Existing Key</string>
+    <string name="checking_existing_key">Checking For Existing Key</string>
+    <string name="key_created">Key Created</string>
+    <string name="key_saved">Key Saved</string>
+    <string name="key_exists_and_used">Key cannot be changed because it has already been used</string>
+    <string name="not_enough_key_error">The remaining key is too short to encrypt your message</string>
+    <string name="user_doesnt_exist">User not found. Create one from the \"Setup\" tab</string>
+    <string name="capture">Capture</string>
+    <string name="no_key_found">No key found. Make sure the entire QR Code is visible.</string>
+    <string name="done">Done</string>
+    <string name="edit_chat">Edit Chat</string>
+    <string name="setup_chat_name">Chat name not set</string>
+    <string name="setup_your_key">Your key not set</string>
+    <string name="setup_their_key">Their key not set</string>
+    <string name="chat">Chat</string>
+    <string name="encryption">Encryption</string>
+    <string name="incorrect_file_hash">The selected file has an incorrect Hash.</string>
+    <string name="token_starts_with">Your token starts with </string>
+    <string name="server_reachable">The app is able to reach the server</string>
+    <string name="server_unreachable">The app is unable to reach the server</string>
+    <string name="password_requirements">The password must contain at least 1 uppercase letter, 1 lowercase letter, and 1 digit</string>
+    <string name="password_can_be_stronger">A strong passphrase contains around 20 characters. It may also contain fewer characters, but more numbers and symbols.</string>
+    <string name="no_encrypted_files">No encrypted files found. Start by encrypting one from the previous screen</string>
+    <string name="file_decrypted_and_saved_in">File decrypted and saved</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="selected_file_label">%S (%S)</string>
+    <string name="send_a_message">Send a message</string>
+    <string name="error_file_info">Error reading file info. Try selecting a different file or using a different file chooser app</string>
+    <string name="error_encryption">An error occurred during encryption.</string>
+
+    <string name="select_action">Select Action</string>
+
+
+
+
+    <string name="settings">Settings</string>
+
+    <string name="pref_encryption_cat_title">Encryption</string>
+
+    <string name="pref_encryption_aes_iterations_key" translatable="false">pref_encryption_aes_iterations_key</string>
+    <string name="pref_encryption_aes_iterations_title">AES Iterations</string>
+    <string name="pref_encryption_aes_iterations_summary">Specifies the number of iterations during file encryption</string>
+
+    <string name="pref_encryption_aes_key_size_key" translatable="false">pref_encryption_aes_key_size_key</string>
+    <string name="pref_encryption_aes_key_size_title">AES Key Length</string>
+    <string name="pref_encryption_aes_key_size_summary">Specifies the length of the key used during file encryption</string>
+
+    <string name="pref_server_cat_title">Server</string>
+
+    <string name="pref_server_test_key" translatable="false">pref_server_test_key</string>
+    <string name="pref_server_test_title">Server Test</string>
+    <string name="pref_server_test_summary">Sends a test message to the server to check if it\'s working</string>
+
+    <string name="pref_server_address_key" translatable="false">pref_server_address_key</string>
+    <string name="pref_server_address_title">Server Address</string>
+    <string name="pref_server_address_summary">Sets the address of the chat server</string>
+
+    <string name="pref_firebase_cat_title">Firebase</string>
+
+    <string name="pref_firebase_token_gen_key" translatable="false">pref_firebase_token_gen_key</string>
+    <string name="pref_firebase_token_gen_title">Firebase Token</string>
+    <string name="pref_firebase_token_gen_summary_placeholder">Token doesn\'t exist</string>
+    <string name="pref_firebase_token_gen_summary_send_to_server">Click to send it to the server</string>
+    <string name="token_sent_to_server">Token sent to server</string>
+
+    <string name="pref_firebase_token_status_key" translatable="false">pref_firebase_token_sent_key</string>
+    <string name="pref_firebase_token_status_title">Token Status</string>
+    <string name="pref_firebase_token_status_positive_summary">Your token is saved on the server, you can send and receive messages</string>
+    <string name="pref_firebase_token_status_negative_summary">Your token is not saved on the server</string>
+
+
+</resources>

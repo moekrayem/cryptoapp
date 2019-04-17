@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lighter_teal"
+    android:layout_gravity="bottom"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/testing_inner_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/testing_view"
+        app:layout_constraintBottom_toBottomOf="@id/testing_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/testing_view"
+        android:background="@drawable/chat_send_message_background">
+
+        <EditText
+            android:id="@+id/testing_edit_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_send_message_background"
+            android:hint="@string/type_a_message"
+            android:inputType="text"
+            android:maxLines="6"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_cancel_brown_small"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="5dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/testing_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/chat_send_message_button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/testing_inner_container"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="5dp"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:clickable="false"
+        android:contentDescription="@string/send_a_message"
+        android:src="@drawable/new_send_white_icon"
+        app:layout_constraintBottom_toBottomOf="@id/testing_view"
+        app:layout_constraintEnd_toEndOf="@id/testing_view"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@id/testing_view"
+        app:layout_constraintTop_toTopOf="@id/testing_view" />
+
+</android.support.constraint.ConstraintLayout>

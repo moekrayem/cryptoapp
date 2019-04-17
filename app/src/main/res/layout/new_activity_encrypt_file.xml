@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_encrypt_file_root_cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="UnusedAttribute,UselessParent">
+
+    <ScrollView
+        android:id="@+id/activity_encrypt_file_container_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/activity_encrypt_file_inner_container_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/activity_encrypt_file_select_path_container_fl"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/circular_shape_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:contentDescription="@string/select_file_encrypt"
+                android:id="@+id/activity_encrypt_file_select_path_iv"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/icon_attach_white"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@id/activity_encrypt_file_select_path_container_fl"
+                app:layout_constraintEnd_toEndOf="@id/activity_encrypt_file_select_path_container_fl"
+                app:layout_constraintStart_toStartOf="@id/activity_encrypt_file_select_path_container_fl"
+                app:layout_constraintTop_toTopOf="@id/activity_encrypt_file_select_path_container_fl" />
+
+            <ProgressBar
+                android:id="@+id/activity_encrypt_file_encryption_progress_pb"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@android:color/white"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/activity_encrypt_file_select_path_container_fl"
+                app:layout_constraintEnd_toEndOf="@id/activity_encrypt_file_select_path_container_fl"
+                app:layout_constraintStart_toStartOf="@id/activity_encrypt_file_select_path_container_fl"
+                app:layout_constraintTop_toTopOf="@id/activity_encrypt_file_select_path_container_fl" />
+
+            <TextView
+                android:id="@+id/activity_encrypt_file_path_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/no_file_selected"
+                android:textColor="@android:color/secondary_text_light"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_encrypt_file_select_path_container_fl" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/activity_encrypt_file_name_til"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColorHint="@color/teal"
+                app:layout_constraintTop_toBottomOf="@id/activity_encrypt_file_path_tv">
+
+                <EditText
+                    android:importantForAutofill="no"
+                    android:id="@+id/activity_encrypt_file_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:backgroundTint="@color/teal"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:textColor="@color/teal" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/activity_encrypt_file_password_til"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/activity_encrypt_file_check_password_iv"
+                android:layout_margin="15dp"
+                android:textColorHint="@color/teal"
+                app:layout_constraintTop_toBottomOf="@id/activity_encrypt_file_name_til"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:importantForAutofill="no"
+                    android:id="@+id/activity_encrypt_file_password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/teal" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <ImageView
+                android:contentDescription="@string/check_password"
+                android:id="@+id/activity_encrypt_file_check_password_iv"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:layout_constraintStart_toEndOf="@id/activity_encrypt_file_password_til"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/activity_encrypt_file_password_til"
+                app:layout_constraintBottom_toBottomOf="@id/activity_encrypt_file_password_til"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/icon_lock_teal" />
+
+            <CheckBox
+                android:id="@+id/activity_encrypt_file_delete_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_encrypt_file_password_til"
+                android:layout_margin="15dp"
+                android:textColor="@color/teal"
+                android:buttonTint="@color/teal"
+                android:text="@string/delete_file"/>
+
+            <CheckBox
+                android:id="@+id/activity_encrypt_file_save_bytes_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_encrypt_file_password_til"
+                android:layout_margin="15dp"
+                android:textColor="@color/teal"
+                android:buttonTint="@color/teal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/save_file_bytes"/>
+
+            <Button
+                android:id="@+id/activity_encrypt_file_encrypt_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/activity_encrypt_file_delete_cb"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/teal"
+                android:shadowColor="@color/teal"
+                android:text="@string/encrypt"
+                android:layout_margin="10dp"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</FrameLayout>

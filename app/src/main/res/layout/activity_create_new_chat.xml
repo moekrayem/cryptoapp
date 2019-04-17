@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_create_new_chat_outer_cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.design.widget.AppBarLayout
+    android:id="@+id/activity_create_new_chat_upper_abl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabMode="fixed" />
+
+</android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_create_new_chat_pager_vp"
+        app:layout_constraintTop_toBottomOf="@id/activity_create_new_chat_upper_abl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+</android.support.constraint.ConstraintLayout>

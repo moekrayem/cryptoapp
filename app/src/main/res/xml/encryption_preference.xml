@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_encryption_cat_title">
+        <ListPreference
+            android:key="@string/pref_encryption_aes_iterations_key"
+            android:title="@string/pref_encryption_aes_iterations_title"
+            android:summary="@string/pref_encryption_aes_iterations_summary"
+            android:entries="@array/pref_aes_iterations_options"
+            android:entryValues="@array/pref_aes_iterations_options"/>
+        <ListPreference
+            android:key="@string/pref_encryption_aes_key_size_key"
+            android:title="@string/pref_encryption_aes_key_size_title"
+            android:summary="@string/pref_encryption_aes_key_size_summary"
+            android:entries="@array/pref_key_size_options"
+            android:entryValues="@array/pref_key_size_options"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_server_cat_title">
+        <EditTextPreference
+            android:key="@string/pref_server_address_key"
+            android:title="@string/pref_server_address_title"
+            android:summary="@string/pref_server_address_summary" />
+        <Preference
+            android:key="@string/pref_server_test_key"
+            android:title="@string/pref_server_test_title"
+            android:summary="@string/pref_server_test_summary"
+            android:icon="@drawable/icon_warning_amber"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_firebase_cat_title">
+        <Preference
+            android:key="@string/pref_firebase_token_gen_key"
+            android:title="@string/pref_firebase_token_gen_title"
+            android:icon="@drawable/icon_warning_amber"/>
+        <Preference
+            android:key="@string/pref_firebase_token_status_key"
+            android:title="@string/pref_firebase_token_status_title"
+            android:icon="@drawable/icon_warning_amber"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

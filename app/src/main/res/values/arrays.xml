@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_key_size_options">
+        <item>128</item>
+        <item>256</item>
+    </string-array>
+
+    <string-array name="pref_aes_iterations_options">
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+    </string-array>
+
+    <string-array name="decrypt_file_long_click_options">
+        <item>Delete Entry</item>
+        <item>Link to File</item>
+    </string-array>
+</resources>

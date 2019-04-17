@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/decrypt_file_list_item_outer_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/decrypt_file_list_item_file_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="7dp"
+        android:textStyle="bold"
+        android:textColor="@color/teal"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/decrypt_file_list_item_file_path_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="7dp"
+        android:textColor="@color/lighter_teal"
+        android:layout_below="@id/decrypt_file_list_item_file_name_tv"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/decrypt_file_list_item_file_exists_iv"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/decrypt_file_list_item_file_path_tv"
+        android:layout_margin="5dp" />
+
+    <ImageView
+        android:id="@+id/decrypt_file_list_item_bytes_exist_iv"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_toStartOf="@id/decrypt_file_list_item_file_exists_iv"
+        android:layout_below="@id/decrypt_file_list_item_file_path_tv"
+        android:layout_margin="5dp" />
+
+    <ImageView
+        android:id="@+id/decrypt_file_list_item_is_chat_iv"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_toStartOf="@id/decrypt_file_list_item_bytes_exist_iv"
+        android:layout_below="@id/decrypt_file_list_item_file_path_tv"
+        android:layout_margin="5dp" />
+
+
+</RelativeLayout>
