@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "163118216201",
+    "firebase_url": "https://cryptoapp-4b359.firebaseio.com",
+    "project_id": "cryptoapp-4b359",
+    "storage_bucket": "cryptoapp-4b359.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163118216201:android:03f3eaa28197c498",
+        "android_client_info": {
+          "package_name": "com.thekrayem.cryptoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163118216201-nn9cn2j7s8c7rpfc8dgvl9qke3a3v1d9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thekrayem.cryptoapp",
+            "certificate_hash": "1f4d3607fb1590deab169fc67b8de71dbf9f96b8"
+          }
+        },
+        {
+          "client_id": "163118216201-h47t0a1d664aleqi5oj6cbc2go4467nu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrHFgLtYQmOT6G9smhpi9iw7px-kX2lZs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163118216201-h47t0a1d664aleqi5oj6cbc2go4467nu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
